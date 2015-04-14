@@ -42,11 +42,9 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ### Configurations
 ###
 
-# Add start.sh and install.sh
+# Add start.sh
 ADD ./config/start.sh /start.sh
-ADD ./config/install.sh /install.sh
 RUN chmod +x /start.sh
-RUN chmod +x /install.sh
 
 
 # Supervisor starts everything
@@ -62,4 +60,4 @@ EXPOSE 80
 EXPOSE 3306
 
 # Supervisord
-CMD ["/install.sh"]
+CMD ["/start.sh"]
