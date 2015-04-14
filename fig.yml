@@ -1,0 +1,9 @@
+# This is an example of a fig.yml file that you can use to boot this container, you need to personalize it before you use it
+web:
+ image: fullbright/drupal-light
+ environment:
+  - VIRTUAL_HOST=appname.dev.bright-softwares.com
+ volumes:
+  - "/path/to/code/directory:/var/www"
+  - "/var/log/docker:/var/log/supervisor"
+ 
