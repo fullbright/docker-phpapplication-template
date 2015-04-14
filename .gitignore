@@ -1,3 +1,6 @@
+# ignore the code folder since it contains all the specific application code
+code/*
+
 # Ignore configuration files that may contain sensitive information.
 sites/*/*settings*.php
 
