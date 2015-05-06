@@ -2,8 +2,8 @@
 web:
  image: fullbright/drupal-light
  environment:
-    - VIRTUAL_HOST=drupalabs.dev.bright-softwares.com
+    - VIRTUAL_HOST=templateproject.dev.bright-softwares.com
  volumes:
-    - "/home/fullbright/docker-projects/drupallabs/code:/var/www"
-    - "/var/log/docker:/var/log/supervisor"
+    - "code:/var/www"
+    - "log:/var/log/supervisor"
  

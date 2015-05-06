@@ -1,8 +1,8 @@
 #!/bin/bash
 
 MYSQL_ROOT_PASSWORD=`pwgen -c -n -1 12`
-MYSQL_DATABASE="drupalabs"
-DRUPAL_USER=${DRUPAL_USER:-"drupalabs"}
+MYSQL_DATABASE="projectdatabse"
+DRUPAL_USER=${DRUPAL_USER:-"project"}
 DRUPAL_PASSWORD=`pwgen -c -n -1 12`
 
 # Initialize MySQL
